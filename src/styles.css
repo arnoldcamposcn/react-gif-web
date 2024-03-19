@@ -1,0 +1,130 @@
+* {
+  font-family: Helvetica, Arial, sans-serif;
+}
+
+body {
+  padding: 50px;
+  background-color: rgb(234, 234, 234);
+
+}
+
+input {
+  background-color: white;
+  border-radius: 5px;
+  border: 1px solid rgb(97, 32, 158);
+  color: black;
+  font-size: 1.2rem;
+  outline: none;
+  padding: 10px 15px;
+  width: 100%;
+}
+
+h2 {
+  font-size: 1.5rem;
+}
+
+h3 {
+  font-size: 3rem;
+  margin-bottom: 5px;
+}
+
+
+.card-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between; /* Ajusta el espaciado entre las columnas */
+  margin: -10px; /* Ajusta el margen negativo para evitar el espacio adicional */
+}
+
+.card {
+  align-items: center;
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: 0px 3px 5px rgba(0, 0, 0, 0.03);
+  flex-basis: calc(25% - 40px); /* Calcula el ancho de la columna con un margen */
+  margin: 10px; /* Agrega un margen entre las columnas */
+  overflow: hidden;
+}
+
+
+.card p {
+  background-color: white;
+  flex: 1;
+  font-size: 1.5rem;
+  margin-top: 5px;
+  padding: 5px 20px 0px 20px;
+  text-align: center;
+}
+
+.card img {
+  width: 100%;
+}
+
+
+  .category-item {
+    margin-top: 20px ;
+    background-color: #ffffff; /* Fondo blanco */
+    border-radius: 20px; /* Bordes redondeados */
+    padding: 8px 15px; /* Espaciado interno */
+    margin: px; /* Margen entre elementos */
+    display: inline-block; /* Para que los elementos floten uno al lado del otro */
+    margin-right: 10px;
+}
+
+.category-item a {
+  display: inline-block;
+    color: black; /* Texto de color plomo */
+    text-decoration: none; /* Sin subrayado */
+    margin-right: 10px; /* Espacio entre el texto y el botón */
+}
+
+
+.category-item button {
+    background-color: #ffffff; /* Fondo blanco */
+    border: none; /* Sin borde */
+    color: black; /* Texto de color plomo */
+    cursor: pointer; /* Cursor de puntero al pasar sobre el botón */
+}
+
+.category-item button:hover {
+    color: #606060; /* Cambio de color del texto al pasar sobre el botón */
+}
+
+
+
+.footer {
+  text-align: center;
+  padding: 20px;
+  background-color: #f0f0f0;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+}
+
+
+@media only screen and (max-width: 768px) {
+  .card {
+      width: calc(100% - 20px);
+  }
+  .card-grid {
+      flex-direction: column;
+      align-items: center;
+  }
+  .card {
+      width: calc(100% - 20px);
+      margin: 10px 0;
+  }
+}
+
+h3 {
+  font-size: 2rem; /* Reduce el tamaño del h3 en dispositivos móviles */
+}
+
+.category-container {
+  flex-direction: column;
+}
+
+.category-item {
+  flex-basis: 50%;
+}
