@@ -15,5 +15,3 @@ export const getGifs = async ( category) => {
     return gifs;
   }
 
-
-  // Commit de prueba 
